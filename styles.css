@@ -200,6 +200,20 @@ body {
     color: #71c9ce;
     text-shadow: 1px 1px black;
 }
+.guidance {
+    padding: 10vmax;
+    padding-bottom: 0;
+    text-align: center;
+    color: #11999e;
+}
+.guidance h5 {
+    margin-bottom: 40px;
+}
+
+.flaticon-imgs {
+    height: 200px;
+    text-align: center;
+}
 
 .this-is-for-you-container {
     padding: 7vmax;
@@ -303,6 +317,7 @@ body {
 .accordion-item i {
     color: #0d1b49;
     padding: .5rem;
+    margin-left: 20px;
 }
 
 .accordion-item .fa-chevron-up {
