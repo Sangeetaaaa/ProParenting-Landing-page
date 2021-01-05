@@ -47,9 +47,11 @@ body {
 }
 
 .navbar__logo {
-    padding: 10px;
-    font-weight: 900;
-    
+    padding: 10px; 
+}
+
+.navbar__logo .tagline {
+    font-size: 13px;
 }
 
 .navbar__items {
@@ -76,6 +78,11 @@ body {
     display: inline;
 }
 
+.logo-img {
+    height: 100px;
+    margin-top: 5px;
+}
+
 .bars {
     visibility: hidden;
 }
@@ -85,7 +92,10 @@ body {
     z-index: 20;
 }
 
-
+.orange-headline {
+    color: rgb(254, 130, 72);
+    font-family: 'Staatliches', cursive;
+}
 
 .carousel-wrapper{
     height:900px;
@@ -183,6 +193,7 @@ body {
     color: white;
 }
 
+
 .heading-content p {
     /* color: #ce7163; */
     padding: 10px;
@@ -193,21 +204,15 @@ body {
     color: #8c0000;
 }
 
-.p-main {
-    font-family: 'Staatliches', cursive;
-    letter-spacing: 2px;
-    text-decoration: underline;
-    color: #71c9ce;
-    text-shadow: 1px 1px black;
-}
-.guidance {
+.brand {
     padding: 10vmax;
     padding-bottom: 0;
     text-align: center;
-    color: #11999e;
 }
-.guidance h5 {
-    margin-bottom: 40px;
+
+.brand img {
+    margin-top: 40px;
+    height: 300px;
 }
 
 .flaticon-imgs {
@@ -222,9 +227,6 @@ body {
     align-items: center;
 }
 
-.this-is-for-you-container h1 {
-    color: #11999e;
-}
 
 .this-is-for-you-container h2 {
     margin-top: 20px;
@@ -288,6 +290,7 @@ body {
 .accordion h1 {
     text-align: center;
     margin-bottom: 20px;
+    font-size: 40px;
 }
 
 .accordion-section {
@@ -349,7 +352,7 @@ body {
 
 .tick {
     font-size: 2rem;
-    color: #71c9ce;
+    color: rgb(254, 130, 72);
 }
 
 
@@ -357,12 +360,14 @@ body {
 
 #pricing {
     text-align: center;
-    background-color: #11999e;
+    background-color: rgb(254, 130, 72);
     padding: 5vmax;
 }
 
 #pricing h1 {
-    color: #e3fdfd;
+    font-family: 'Staatliches', cursive;
+    color: black;
+    font-size: 40px;
 }
 
 .btn {
@@ -398,14 +403,15 @@ body {
 }
 
 .tick-sm {
-    color: #71c9ce;
+    color: rgb(254, 130, 72);
     font-weight: 800;
     font-size: medium;
 }
 
+
 .plan h2 {
     margin-bottom: 30px;
-    text-align: left;
+    font-family: 'Staatliches', cursive;
 }
 
 .plan li {
@@ -437,7 +443,7 @@ body {
 
 .about-us h1 {
     margin-bottom: 3vmin;
-    color: #11999e;
+    font-size: 40px;
 }
 
 /* testimonial */
@@ -446,7 +452,7 @@ body {
 }
 
 .testimonial h1 {
-    color: #71c9ce;
+    font-size: 40px;
 }
 
 /* Mentors */
@@ -455,7 +461,7 @@ body {
 }
 
 .mentors h1 {
-    color: #71c9ce;
+    font-size: 40px;
 }
 
 
@@ -529,6 +535,10 @@ body {
     }
     .heading-content .p {
         margin-top: 10px;
+    }
+    .guidance {
+        padding: 5vmax;
+        margin-top: 50px;
     }
     .parent-child-img img {
         height: 200px;
