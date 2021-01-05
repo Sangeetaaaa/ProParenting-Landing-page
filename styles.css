@@ -19,6 +19,9 @@ body {
 }
 
 
+
+
+
 /* NAVBAR STYLING  */
 
 .navbar {
@@ -26,16 +29,17 @@ body {
     top: 0;
     width: 100%;
     display: flex;
+    z-index: 10;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    background-color: #71c9ce;
+    background-color: transparent;
     height: 60px;
 }
 
 .active_navbar {
     border-bottom: 1px solid #71c9ce;
-    z-index: 2;
+    z-index: 10;
     background-color: #e6f5f6;
     transition: all 1s;
     -webkit-box-shadow: 5px 5px 12px -2px rgba(142, 142, 142, 0.33);
@@ -44,6 +48,8 @@ body {
 
 .navbar__logo {
     padding: 10px;
+    font-weight: 900;
+    
 }
 
 .navbar__items {
@@ -75,17 +81,109 @@ body {
 }
 
 
+.heading-content {
+    z-index: 20;
+}
+
+
+
+.carousel-wrapper{
+    height:900px;
+    position:relative;
+    width:100%;
+    margin:0 auto;
+  }
+  .carousel-item{
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    padding:25px 50px;
+    opacity:0;
+    transition: all 0.5s ease-in-out;
+  }
+  .arrow{
+    border: solid black;
+      border-width: 0 3px 3px 0;
+      display: inline-block;
+      padding: 12px;
+  }
+  
+  .arrow-prev{
+    left:20px;
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%) rotate(135deg);
+  }
+   
+  .arrow-next{
+      right:20px;
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%) rotate(-45deg);
+    }
+  
+  .light{
+    color:white;
+  }
+  
+  @media (max-width: 480px) {
+        .arrow, .light .arrow {
+          background-size: 10px;
+          background-position: 10px 50%;
+        }
+    }
+  
+  
+  /*Select every element*/
+  [id^="item"] {
+      display: none;
+    }
+  
+  .item-1 {
+      z-index: 2;
+      opacity: 1;
+    background:url('https://t4.ftcdn.net/jpg/01/76/13/21/240_F_176132108_T3fBSerAexeEsBvDBO23MCsw6N0a7BgR.jpg');
+    background-size:cover;
+    }
+  .item-2{
+    background:url('https://t3.ftcdn.net/jpg/02/50/21/90/240_F_250219088_RHG1GFjcvtA7rIoPsAce69g29pypVm8n.jpg');
+     background-size:cover;
+  }
+  .item-3{
+    background:url('https://t3.ftcdn.net/jpg/02/01/77/32/240_F_201773227_UCvsfaGtWaad1QKywnzwRzq5BO64lOv5.jpg');
+     background-size:cover;
+  }
+  
+  *:target ~ .item-1 {
+      opacity: 0;
+    }
+  
+  #item-1:target ~ .item-1 {
+      opacity: 1;
+    }
+  
+  #item-2:target ~ .item-2, #item-3:target ~ .item-3 {
+      z-index: 3;
+      opacity: 1;
+    }
+
+
+
+
 /* HOME STYLING  */
 
-.home {
+.heading-content {
     margin-top: 80px;
     height: 300px;
     padding: 10vmax;
+    opacity: 0.9;
     text-align: center;
-    background-color: #71c9ce;
+    color: white;
 }
 
-.home p {
+.heading-content p {
     /* color: #ce7163; */
     padding: 10px;
 }
@@ -93,6 +191,14 @@ body {
 .text-color {
     /* color: #ce71c9; */
     color: #8c0000;
+}
+
+.p-main {
+    font-family: 'Staatliches', cursive;
+    letter-spacing: 2px;
+    text-decoration: underline;
+    color: #71c9ce;
+    text-shadow: 1px 1px black;
 }
 
 .this-is-for-you-container {
@@ -395,17 +501,18 @@ body {
         display: none;
     }
     /* HOME STYLING  */
-    .home {
-        padding: 5vmax;
-        height: 550px;
+    .heading-content {
+        padding: 5px;
+        margin-top: 0;
+        height: 750px;
     }
-    .home h3 {
+    .heading-content h3 {
         margin-top: 5rem;
     }
-    .home h1 {
+    .heading-content h1 {
         font-size: 1.5em;
     }
-    .home .p {
+    .heading-content .p {
         margin-top: 10px;
     }
     .parent-child-img img {
