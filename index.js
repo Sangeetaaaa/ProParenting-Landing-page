@@ -98,3 +98,23 @@ link6.addEventListener('click', () => {
 link7.addEventListener('click', () => {
     ans7.classList.toggle('answer__active')
 })
+
+
+
+
+// For Displaying welcome content
+let i = 0
+let j = 0 
+
+
+
+
+window.onload = function typing2(){
+    const content2 = " Under the Guidance of 100+ Parenting Coaches in India"
+
+        j < content2.length &&
+        document.querySelector('.heading-line2').append(content2.charAt(j))
+        j++
+        setTimeout(typing2, 40)
+}
+

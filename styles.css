@@ -192,7 +192,9 @@ body {
     text-align: center;
     color: white;
 }
-
+.heading-line2 {
+    background-color: #eee;
+}
 
 .heading-content p {
     /* color: #ce7163; */
@@ -535,6 +537,10 @@ body {
     .heading-content h3 {
         margin-top: 5rem;
     }
+    .heading-line1 {
+        margin-top: 100px;
+    }
+    
     .heading-content h1 {
         font-size: 1.5em;
     }
