@@ -103,7 +103,6 @@ link7.addEventListener('click', () => {
 
 
 // For Displaying welcome content
-let i = 0
 let j = 0 
 
 
@@ -117,4 +116,6 @@ window.onload = function typing2(){
         j++
         setTimeout(typing2, 40)
 }
+
+
 

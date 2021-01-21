@@ -230,7 +230,9 @@ body {
 }
 
 .flaticon-imgs {
-    height: 200px;
+    height: 50px;
+    margin-top: 20px;
+    width: auto;
     text-align: center;
 }
 
@@ -435,6 +437,10 @@ body {
     cursor: pointer;
     background-color: #11999e;
     color: white;
+}
+
+.icon-img {
+    height: 100px;
 }
 
 .plan {
@@ -650,5 +656,179 @@ body {
     .about-us__img img {
         height: 250px;
         margin-top: 50px;
+    }
+}
+
+
+
+
+
+/* propracting actual page styling  */
+
+.navbar-2 {
+    font-size: small;
+}
+
+.propage {
+    margin-top: 200px;
+}
+
+.propage__heading {
+    padding: 5vmax;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+
+.propage__heading h2 {
+    word-break: break-all;
+}
+
+.propage__heading img {
+    height: 400px;
+}
+
+.orange-span {
+    color: rgb(254, 130, 72);
+}
+
+.propage__flowchart {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.propage__flowchart-container {
+    flex-direction: column;
+    width: fit-content;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: flex-end;
+    margin: 0 auto;
+}
+
+
+.propage__flowchart-container .propage__flowchart-box {
+    height: 70px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 30px 60px;
+    transition: box-shadow 0.2s ease 0s;
+    margin-top: 10px;
+    align-self: center;
+    /* border: 1px solid rgb(254, 130, 72); */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.propage__flowchart-container > div:hover {
+   box-shadow:rgb(254, 130, 72) 0px 5px 10px;
+   cursor: pointer;
+}
+
+
+.propage__symbols {
+    margin-top: 200px;
+    margin-bottom: 200px;
+    text-align: center;
+}
+
+.propage__symbols h1 {
+    margin-top: 100px;
+}
+
+
+.propage__symbols img {
+    height: 100px;
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+
+.propage__symbols p {
+    width: 400px;
+}
+
+.propage__symbols-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.propage__symbols-container > div {
+    padding: 3vmax;
+}
+
+.propage__why {
+    margin-top: 200px;
+    margin-bottom: 200px;
+    text-align: center;
+}
+
+.propage__why-container img {
+    height: 100px;
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+
+
+.propage__why-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+
+
+.propage__why-container > div {
+    max-width: 300px;
+    padding: 10px;
+}
+
+.propage__register, .propage__coaches, .propage__traning {
+    padding: 5vmax;
+}
+
+
+.propage__calltoaction {
+    margin-top: 50px;
+    margin-bottom: 100px;
+    padding: 5vmax;
+}
+
+.propage__calltoaction-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.propage__calltoaction-container > div {
+    margin-top: 50px;
+    width: 400px;
+    box-shadow: #eee 0px 5px 10px;
+    border-radius: 25px 0px 100px 2px;
+    background-color: #e6f5f6;
+    padding: 30px;
+    letter-spacing: 2px;
+}
+
+
+.propage__calltoaction-container > div:hover {
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 30px 60px;
+}
+
+
+
+
+@media only screen and (max-width: 800px) {
+    .propage__heading h2 {
+        margin-top: 20px;
+        word-break: normal;
+        text-align: center;
+    }
+
+    .propage__symbols p {
+        width: auto;
+        padding: 10px;
     }
 }
